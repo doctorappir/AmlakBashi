@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:background="#0081a7"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_2sdp"
+        >
+
+        <TextView
+            android:id="@+id/app_header_advertising_icon"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/pluss"
+            android:gravity="center"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/app_header_advertising_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/app_header_advertising_icon"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#FFFFFF"
+            android:text="@string/app_header_advertising_text"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_2sdp"
+        >
+
+        <TextView
+            android:id="@+id/app_header_request_icon"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/pluss"
+            android:gravity="center"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/app_header_request_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/app_header_request_icon"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#FFFFFF"
+            android:text="@string/app_header_request_text"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
