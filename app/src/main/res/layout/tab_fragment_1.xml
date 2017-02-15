@@ -1,15 +1,404 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Tab 1"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@android:drawable/alert_dark_frame" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/mablagh_col"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_mablagh_kol_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_mablagh_kol_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/mablagh_metri"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_mablagh_metri_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_mablagh_metri_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/metraj"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_metraj_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_metraj_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/tabaghe"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_tabaghe_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_tabaghe_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/sen_ban"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_sen_ban_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_sen_ban_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <CheckBox
+                        android:id="@+id/cb_anbari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:longClickable="false"
+                        android:theme="@style/MyCheckBox" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/anbari"
+                        android:textColor="@color/cardview_light_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <CheckBox
+                        android:id="@+id/cb_asansor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:longClickable="false"
+                        android:theme="@style/MyCheckBox" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/asansor"
+                        android:textColor="@color/cardview_light_background" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/tedad_khab"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_khab_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_khab_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/tedad_vahed"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_vahed_ta"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/to"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_vahed_az"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/gradient_spinner"
+                    android:prompt="@string/amlak"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/from"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/search" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

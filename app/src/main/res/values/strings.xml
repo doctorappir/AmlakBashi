@@ -8,4 +8,19 @@
     <string name="delete">حذف</string>
     <string name="edit">تغییر</string>
     <string name="editبیسبیسب">تغییر</string>
+    <string name="mablagh_col">مبلغ کل</string>
+    <string name="to">تا</string>
+    <string name="from">از</string>
+    <string name="mablagh_metri">مبلغ متری</string>
+    <string name="metraj">متراژ</string>
+    <string name="tabaghe">طبقه</string>
+    <string name="sen_ban">سن بنا</string>
+    <string name="anbari">انباری</string>
+    <string name="asansor">آسانسور</string>
+    <string name="tedad_khab">تعداد خواب</string>
+    <string name="tedad_vahed">تعداد واحد</string>
+    <string name="search">جستجو</string>
+    <string name="amlak">نوع ملک</string>
+    <string name="mantaghe">نوع معامله</string>
+    <string name="moamele">نوع منظقه</string>
 </resources>
