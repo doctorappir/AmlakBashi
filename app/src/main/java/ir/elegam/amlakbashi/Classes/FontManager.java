@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
- * Created by Droid on 11/29/2016.
+ * Created by Mehrdad Latifi on 11/29/2016.
  */
 
 public class FontManager {
