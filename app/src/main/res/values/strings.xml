@@ -5,5 +5,7 @@
     <string name="app_header_advertising_text">ثبت آگهی</string>
     <string name="app_header_request_text">ثبت درخواست</string>
     <string name="estate_visit">مشاهده ملک</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تغییر</string>
 
 </resources>
